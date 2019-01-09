@@ -15,3 +15,18 @@ document.getElementById("testafter").style.backgroundColor = "red";
 function changeBgColor() {
   document.getElementById("testafter1").style.backgroundColor = "green";
 }
+
+//The way we write dashes from CSS to JS is to use camelCase.//
+
+//To avoid writing document.getElementById(id); many times later.//
+
+function $(id) {
+  return document.getElementById(id);
+}
+
+function makingChanges() {
+  $("divBeingChanged").style.border = "1px solid red";
+  $("divBeingChanged").innerHTML = "BORDER has been added to this div. And TEXT CHANGED too.";
+  $("Button").innerHTML = "The text of this button changed! And it becames disabled.";
+  $("Button").disabled = true;
+}

@@ -10,23 +10,32 @@
 </head>
 
 <body>
+
   <h1>GET ELEMENT BY ID</h1>
   <h3>Changing the value of an input</h3>
   <input type="text" id="myId" value="value">
+
   <h3>Changing a whole div</h3>
   <div id="test" class="toTestID">We will change this content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos veritatis sequi minus.</div>
+
   <h3>How the old one looked:</h3>
   <div id="oldTest" class="toTestID">We will change this content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos veritatis sequi minus.</div>
+
   <h3>Changing the color of an element</h3>
   <div id="testbefore" class="toTestID">We will change the color of this element. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos veritatis sequi minus.</div>
   <div id="testafter" class="toTestID">Color of this div has been changed using js. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos veritatis sequi minus.</div>
+
   <h3>Changing the color of an element (div) by clicking it.</h3>
   <div id="testbefore1" class="toTestID">We will change the color of this element when clicked. </div>
   <div id="testafter1" class="toTestID" onclick="changeBgColor()">The color of this element changed because it was clicked.</div>
 
+  <h3>Changing the properties of Div and itself by clicking button.</h3>
+  <div id="divBeingChanged" class="toTestID">This div element will be changed when button is clicked</div>
+  <br>
+  <button type="button" id="Button" onclick="makingChanges()">Click here to make changes!</button>
 
 
-
+  <!-- Scripts -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
   <script type="text/javascript" src="index.js "></script>
